@@ -20,3 +20,8 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+- script: echo "Simulating Deployment to Azure App Service"
+  displayName: 'Deploy'
+
+- script: echo "Using Secret Variable"
+  displayName: 'Secrets'
